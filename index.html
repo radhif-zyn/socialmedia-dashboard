@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 15px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <main id="main">
+    <section class="header"> <!-- HEADER SECTION -->
+      <div class="dashboard-title">
+        <h1>Social Media Dashboard</h1>
+        <span>Total Followers: 23,004</span>
+      </div>
+  
+      <div class="darkmode">
+        <span class="toggle-title">Dark Mode</span>
+        <input type="checkbox" name="darkmode" id="darkmode-toggle">
+      </div>
+    </section>
+
+    <section class="content"> <!-- MAIN CONTENT -->
+      <div class="followers-update"> <!--  FOLLOWERS UPDATE ( FIRST ROW ) -->
+        <div class="followers-card facebook-followers">
+          <div class="socialmedia-username">
+            <img src="images/icon-facebook.svg" alt="Facebook">
+            <span class="username">@nathanf</span>
+          </div>
+
+          <div class="total-followers">
+            <span id="followers">1987</span>
+            <span id="followers-text">Followers</span>
+          </div>
+
+          <div class="progress green">
+            <i class='bx bxs-up-arrow'></i> 12 Today
+          </div>
+        </div>
+
+        <div class="followers-card twitter-followers">
+          <div class="socialmedia-username">
+            <img src="images/icon-twitter.svg" alt="Twitter">
+            <span class="username">@nathanf</span>
+          </div>
+
+          <div class="total-followers">
+            <span id="followers">1044</span>
+            <span id="followers-text">Followers</span>
+          </div>
+
+          <div class="progress green"><i class='bx bxs-up-arrow'></i> 99 Today</div>
+        </div>
+        
+
+        <div class="followers-card instagram-followers">
+          <div class="socialmedia-username">
+            <img src="images/icon-instagram.svg" alt="Instagram">
+            <span class="username">@realnathanf</span>
+          </div>
+
+          <div class="total-followers">
+            <span id="followers">11k</span>
+            <span id="followers-text">Followers</span>
+          </div>
+
+          <div class="progress green"><i class='bx bxs-up-arrow'></i> 1099 Today</div>
+        </div>
+
+        <div class="followers-card youtube-followers">
+          <div class="socialmedia-username">
+            <img src="images/icon-youtube.svg" alt="Youtube">
+            <span class="username">Nathan F.</span>
+          </div>
+
+          <div class="total-followers">
+            <span id="followers">8239</span>
+            <span id="followers-text">Followers</span>
+          </div>
+
+          <div class="progress red"><i class='bx bxs-down-arrow'></i> 144 Today</div>
+        </div>
+      </div>
+
+      <!-- /////////////// OVERVIEW SECTION /////////////// -->
+
+      <div class="overview-today">
+        <div class="overview-section-title">
+          <h2>Overview - Today</h2>
+        </div>
+
+        <div class="overview-card-container">
+          <div class="card one">
+            <div class="card-heading">
+              <h3>Page Views</h3>
+              <img src="images/icon-facebook.svg" alt="Facebook" class="card-icon">
+            </div>
+
+            <div class="overview-progress">
+              <h1 class="number">87</h1>
+              <span class="number-progress green"><i class='bx bxs-up-arrow'></i> 3%</span>
+            </div>
+          </div>
+
+          <div class="card two">
+            <div class="card-heading">
+              <h3>Likes</h3>
+              <img src="images/icon-facebook.svg" alt="Facebook" class="card-icon">
+            </div>
+
+            <div class="overview-progress">
+              <h1 class="number">52</h1>
+              <span class="number-progress red"><i class='bx bxs-down-arrow'></i> 2%</span>
+            </div>
+          </div>
+
+          <div class="card three">
+            <div class="card-heading">
+              <h3>Likes</h3>
+              <img src="images/icon-instagram.svg" alt="Instagram" class="card-icon">
+            </div>
+
+            <div class="overview-progress">
+              <h1 class="number">5462</h1>
+              <span class="number-progress green"><i class='bx bxs-up-arrow'></i> 2257%</span>
+            </div>
+          </div>
+
+          <div class="card four">
+            <div class="card-heading">
+              <h3>Profile Views</h3>
+              <img src="images/icon-instagram.svg" alt="Instagram" class="card-icon">
+            </div>
+
+            <div class="overview-progress">
+              <h1 class="number">52k</h1>
+              <span class="number-progress green"><i class='bx bxs-up-arrow'></i> 1375%</span>
+            </div>
+          </div>
+
+          <div class="card five">
+            <div class="card-heading">
+              <h3>Retweets</h3>
+              <img src="images/icon-twitter.svg" alt="Twitter" class="card-icon">
+            </div>
+
+            <div class="overview-progress">
+              <h1 class="number">117</h1>
+              <span class="number-progress green"><i class='bx bxs-up-arrow'></i> 303%</span>
+            </div>
+          </div>
+
+          <div class="card six">
+            <div class="card-heading">
+              <h3>Likes</h3>
+              <img src="images/icon-facebook.svg" alt="Facebook" class="card-icon">
+            </div>
+
+            <div class="overview-progress">
+              <h1 class="number">507</h1>
+              <span class="number-progress green"><i class='bx bxs-up-arrow'></i> 553%</span>
+            </div>
+          </div>
+
+          <div class="card seven">
+            <div class="card-heading">
+              <h3>Likes</h3>
+              <img src="images/icon-youtube.svg" alt="Youtube" class="card-icon">
+            </div>
+
+            <div class="overview-progress">
+              <h1 class="number">107</h1>
+              <span class="number-progress red"><i class='bx bxs-down-arrow'></i> 19%</span>
+            </div>
+          </div>
+
+          <div class="card eight">
+            <div class="card-heading">
+              <h3>Likes</h3>
+              <img src="images/icon-youtube.svg" alt="Youtube" class="card-icon">
+            </div>
+
+            <div class="overview-progress">
+              <h1 class="number">1407</h1>
+              <span class="number-progress red"><i class='bx bxs-down-arrow'></i> 12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Radhif Azli</a>.
+  </div>
+<script src="js/app.js"></script>
+</body>
+</html>
